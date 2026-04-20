@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Hera | Ana María</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+<nav class="container">
+
+<div class="logo" onclick="cargarPortada()">HERA</div>
+
+<div class="search-box">
+<input type="text" id="inputBusqueda"
+placeholder="Busca tu joya..."
+onkeyup="buscarProducto()">
+</div>
+
+<ul>
+<li><a onclick="cargarPortada()">Inicio</a></li>
+<li><a onclick="filtrar('Diamantes')">Diamantes</a></li>
+<li><a onclick="filtrar('Relojes')">Relojes</a></li>
+</ul>
+
+<div class="carrito-icono" onclick="abrirCarrito()">
+🛒 <span id="contador-carrito">0</span>
+</div>
+
+</nav>
+</header>
+
+<div class="slider-container">
+<div class="slide active"
+style="background-image:url('img/fondo-joya1.jpg')"></div>
+
+<div class="slide"
+style="background-image:url('img/fondo-joya2.jpg')"></div>
+
+<div class="slider-overlay">
+<h1>PORQUE TÚ ERES BRILLO</h1>
+</div>
+</div>
+
+<main class="container">
+<h2>Nuestras Colecciones</h2>
+<div id="grid-productos"></div>
+</main>
+
+<div id="carrito" class="carrito">
+<h2>Tu carrito</h2>
+<div id="items-carrito"></div>
+<h3>Total: $<span id="total">0</span></h3>
+<button onclick="cerrarCarrito()">Cerrar</button>
+</div>
+<div class="formas-pago">
+ 
+<footer class="footer-luxury">
+
+<div class="social-icons">
+
+<a href="https://wa.me/573122341122" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="https://www.instagram.com/a___anahi?igsh=MXg0MmVqdm84Ym50Zw%3D%3D&utm_source=qr" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+
+<a href="https://www.tiktok.com/@a___anahi?_r=1&_t=ZS-95MnHMosRPU" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+
+<a href="mailto:miraanamari@gmail.com">
+<i class="fas fa-envelope"></i>
+</a>
+
+<a href="https://www.tiktok.com/@a___anahi?_r=1&_t=ZS-95MnHMosRPU" target="_blank">
+<i class="fab fa-facebook"></i>
+</a>
+
+</div>
+
+<p>© 2026 HERA Joyeria — Porque tú eres brillo ✨</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
